@@ -32,6 +32,7 @@ public class EchoClient {
     }
 
     public void start() throws InterruptedException {
+
         NioEventLoopGroup eventLoopGroup = new NioEventLoopGroup(); //eventLoop 线程池组
         try{
             Bootstrap bootstrap = new Bootstrap(); //客户端配置文件
