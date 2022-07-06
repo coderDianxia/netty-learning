@@ -14,7 +14,7 @@ import io.netty.util.CharsetUtil;
  * @Author:coderDianxia
  * @Date: 2022/6/30 10:03
  */
-@ChannelHandler.Sharable  //表示该类的实例可以在channel之间共享
+@ChannelHandler.Sharable  //表示该类的实例可以在被多个channelpipline添加，使用该注解要确保该实例是线程安全的
 public class EchoServerHandler extends ChannelInboundHandlerAdapter {
 
     @Override
